@@ -16,6 +16,7 @@
 		F2A16806248A2CF8007502D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A16805248A2CF8007502D9 /* Assets.xcassets */; };
 		F2A16809248A2CF8007502D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A16807248A2CF8007502D9 /* LaunchScreen.storyboard */; };
 		F2B3E6ED24A9781B00AE23F1 /* JalnanOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2B3E6EC24A9781B00AE23F1 /* JalnanOTF.otf */; };
+		F2F15FD724BBDE92001FA06B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F15FD624BBDE92001FA06B /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F2A16808248A2CF8007502D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2A1680A248A2CF8007502D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2B3E6EC24A9781B00AE23F1 /* JalnanOTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = JalnanOTF.otf; sourceTree = "<group>"; };
+		F2F15FD624BBDE92001FA06B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F779AC549219EDFA0FDB4573 /* Pods_D_Book.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_D_Book.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				F2A16802248A2CF5007502D9 /* Main.storyboard */,
+				F2F15FD624BBDE92001FA06B /* Login.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				F2A16809248A2CF8007502D9 /* LaunchScreen.storyboard in Resources */,
 				F2B3E6ED24A9781B00AE23F1 /* JalnanOTF.otf in Resources */,
 				F2A16806248A2CF8007502D9 /* Assets.xcassets in Resources */,
+				F2F15FD724BBDE92001FA06B /* Login.storyboard in Resources */,
 				F2A16804248A2CF5007502D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
