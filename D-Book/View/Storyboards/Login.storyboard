@@ -13,221 +13,412 @@
     </customFonts>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="CKM-EA-kPy">
+        <scene sceneID="tkY-lC-JF5">
             <objects>
-                <viewController id="4kL-ev-OFU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oDM-3M-7Wq">
+                <viewController id="Wxd-I7-Ldf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SIG-vv-YDg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="40" affinity="minX"/>
+                            <userLayoutGuide location="335" affinity="minX"/>
+                        </userGuides>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="pu6-hP-Sda">
-                                <rect key="frame" x="139" y="97" width="97" height="182"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="환영합니다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bC-TB-Gds">
-                                <rect key="frame" x="107.66666666666669" y="303" width="160" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="30"/>
-                                <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlX-4g-9PE">
-                                <rect key="frame" x="110" y="499" width="155" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="12"/>
-                                <state key="normal" title="비밀번호를 잊어버리셨나요?">
-                                    <color key="titleColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyI-xG-9Gz">
-                                <rect key="frame" x="40" y="547" width="295" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="18"/>
-                                <state key="normal" title="로그인" backgroundImage="RoundBT"/>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일 주소" minimumFontSize="17" background="TextField" translatesAutoresizingMaskIntoConstraints="NO" id="NDg-Zh-s7e">
-                                <rect key="frame" x="40" y="359" width="295" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" minimumFontSize="17" background="TextField" translatesAutoresizingMaskIntoConstraints="NO" id="U8g-0G-b9z">
-                                <rect key="frame" x="40" y="425" width="295" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avH-Ls-Xsf">
-                                <rect key="frame" x="93" y="752" width="125" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="14"/>
-                                <state key="normal" title="계정이 없으신가요?">
-                                    <color key="titleColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODq-dK-sE3">
-                                <rect key="frame" x="226" y="752" width="56" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="14"/>
-                                <state key="normal" title="회원가입">
-                                    <color key="titleColor" red="0.29803921568627451" green="0.85098039215686272" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xO1-Lg-6xR">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="58M-SH-Y93">
+                                        <rect key="frame" x="0.0" y="55" width="375" height="182"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="182" id="egx-1Q-Ayh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="eDY-7v-pEC">
+                                        <rect key="frame" x="0.0" y="245" width="375" height="308"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="환영합니다!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8g-lx-cTo">
+                                                <rect key="frame" x="40" y="8" width="295" height="30"/>
+                                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="30"/>
+                                                <color key="textColor" red="0.62367820740000002" green="0.62313765290000001" blue="0.64314037560000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="NwZ-6E-4XC">
+                                                <rect key="frame" x="40" y="62" width="295" height="116"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일 주소" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="19L-1e-bVY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="KvS-WF-iWG"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GvJ-xF-onC">
+                                                        <rect key="frame" x="0.0" y="66" width="295" height="50"/>
+                                                        <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyy-L4-DUA">
+                                                <rect key="frame" x="40" y="202" width="295" height="24"/>
+                                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="12"/>
+                                                <state key="normal" title="비밀번호를 잊어버리셨나요?">
+                                                    <color key="titleColor" red="0.62367820740000002" green="0.62313765290000001" blue="0.64314037560000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZZ-HT-IL6">
+                                                <rect key="frame" x="40" y="250" width="295" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="zaT-Oo-sM6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="18"/>
+                                                <state key="normal" title="로그인" backgroundImage="RoundBT">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="8" left="40" bottom="8" right="40"/>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="hWj-ny-CPa">
+                                        <rect key="frame" x="0.0" y="561" width="375" height="131"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4Ai-Fz-vrs">
+                                        <rect key="frame" x="0.0" y="700" width="375" height="26"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EWL-XS-kDh">
+                                                <rect key="frame" x="95" y="0.0" width="185" height="26"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정이 없으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioO-ir-ULE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="26"/>
+                                                        <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="14"/>
+                                                        <color key="textColor" red="0.62367820740000002" green="0.62313765290000001" blue="0.64314037560000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sZ-9h-GxJ">
+                                                        <rect key="frame" x="129" y="0.0" width="56" height="26"/>
+                                                        <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="14"/>
+                                                        <state key="normal" title="회원가입">
+                                                            <color key="titleColor" red="0.29803921568627451" green="0.85098039215686272" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="IUF-54-mo2" kind="presentation" modalPresentationStyle="fullScreen" id="yIN-FJ-6f3"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="55" left="0.0" bottom="8" right="0.0"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
-                        <viewLayoutGuide key="safeArea" id="gXg-0X-XDv"/>
+                        <constraints>
+                            <constraint firstItem="v23-7f-fmG" firstAttribute="bottom" secondItem="xO1-Lg-6xR" secondAttribute="bottom" id="AHh-Rb-sjg"/>
+                            <constraint firstItem="v23-7f-fmG" firstAttribute="trailing" secondItem="xO1-Lg-6xR" secondAttribute="trailing" id="dNh-Nn-CTg"/>
+                            <constraint firstItem="xO1-Lg-6xR" firstAttribute="top" secondItem="v23-7f-fmG" secondAttribute="top" id="xAn-gC-828"/>
+                            <constraint firstItem="xO1-Lg-6xR" firstAttribute="leading" secondItem="v23-7f-fmG" secondAttribute="leading" id="xdL-K3-AQH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v23-7f-fmG"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tcK-EF-8mT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uwM-mi-Ex0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="-216.50246305418719"/>
+            <point key="canvasLocation" x="76" y="-222"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="9fj-6z-AXy">
+        <scene sceneID="qvo-WO-gXV">
             <objects>
-                <viewController id="ld4-8i-WeH" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2O6-VA-KOi">
+                <viewController id="Ch7-N0-fFz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q27-Rl-rWJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="40" affinity="minX"/>
+                            <userLayoutGuide location="335" affinity="minX"/>
+                        </userGuides>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="uCt-2h-Rvj">
-                                <rect key="frame" x="139" y="97" width="97" height="182"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="처음오셨군요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLM-tG-Yqv">
-                                <rect key="frame" x="92" y="303" width="190" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="30"/>
-                                <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yG1-gT-UGt">
-                                <rect key="frame" x="40" y="483" width="172" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="11"/>
-                                <state key="normal" title="6자리 이상, 대문자 포함, 숫자 포함">
-                                    <color key="titleColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3CD-kE-QAz">
-                                <rect key="frame" x="100" y="752" width="125" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="14"/>
-                                <state key="normal" title="계정이 없으신가요?">
-                                    <color key="titleColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBu-74-l6R">
-                                <rect key="frame" x="40" y="547" width="295" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="18"/>
-                                <state key="normal" title="다음" backgroundImage="RoundBT"/>
-                                <state key="disabled" title="다음" backgroundImage="RoundBT_Disable"/>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일 주소" minimumFontSize="17" background="TextField" translatesAutoresizingMaskIntoConstraints="NO" id="OOJ-ur-eQd">
-                                <rect key="frame" x="40" y="359" width="295" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" minimumFontSize="17" background="TextField" translatesAutoresizingMaskIntoConstraints="NO" id="PRW-d7-ZgE">
-                                <rect key="frame" x="40" y="425" width="295" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXb-WM-M2k">
-                                <rect key="frame" x="233" y="752" width="42" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="14"/>
-                                <state key="normal" title="로그인">
-                                    <color key="titleColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qX3-vH-v5u">
-                                <rect key="frame" x="303" y="374" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6NB-XP-PFO">
-                                <rect key="frame" x="303" y="440" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsx-AU-dlU">
-                                <rect key="frame" x="77" y="612" width="220" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">가입함으로써 D-Book의 가입에 동의함.
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0uf-2q-FkL">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="kmJ-c2-ccS">
+                                        <rect key="frame" x="0.0" y="55" width="375" height="182"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="182" id="SGl-8S-KGt"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="TVX-T4-m6o">
+                                        <rect key="frame" x="0.0" y="245" width="375" height="295"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="처음오셨군요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ck8-M1-cEa">
+                                                <rect key="frame" x="40" y="8" width="295" height="30"/>
+                                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="30"/>
+                                                <color key="textColor" red="0.62367820740000002" green="0.62313765290000001" blue="0.64314037560000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="MXv-vW-EeY">
+                                                <rect key="frame" x="40" y="62" width="295" height="116"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jn5-Zg-E2T">
+                                                        <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일 주소" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ryc-VR-Kiz">
+                                                                <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="XGI-NF-r4O"/>
+                                                                </constraints>
+                                                                <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="12"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ckG-pt-BSE">
+                                                                <rect key="frame" x="261" y="13" width="24" height="24"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="24" id="nqf-hl-BaY"/>
+                                                                    <constraint firstAttribute="width" constant="24" id="tyT-tL-X9m"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="ckG-pt-BSE" firstAttribute="centerY" secondItem="Jn5-Zg-E2T" secondAttribute="centerY" id="7HH-oo-kGN"/>
+                                                            <constraint firstItem="Ryc-VR-Kiz" firstAttribute="top" secondItem="Jn5-Zg-E2T" secondAttribute="top" id="LM3-Ta-0v2"/>
+                                                            <constraint firstItem="Ryc-VR-Kiz" firstAttribute="leading" secondItem="Jn5-Zg-E2T" secondAttribute="leading" id="UmR-2W-rFK"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Ryc-VR-Kiz" secondAttribute="trailing" id="m2A-oe-fm7"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Ryc-VR-Kiz" secondAttribute="bottom" id="tq7-Ri-hTW"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ckG-pt-BSE" secondAttribute="trailing" constant="10" id="zRr-DR-Axg"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOA-hf-iIU">
+                                                        <rect key="frame" x="0.0" y="66" width="295" height="50"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sha-ea-S6T">
+                                                                <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
+                                                                <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="12"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                            </textField>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MAa-HL-N2L">
+                                                                <rect key="frame" x="261" y="13" width="24" height="24"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="24" id="g9D-n1-8VK"/>
+                                                                    <constraint firstAttribute="height" constant="24" id="m2t-eB-ejm"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Sha-ea-S6T" firstAttribute="leading" secondItem="dOA-hf-iIU" secondAttribute="leading" id="6Pu-70-hKl"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Sha-ea-S6T" secondAttribute="trailing" id="Bqc-Wi-MWB"/>
+                                                            <constraint firstItem="MAa-HL-N2L" firstAttribute="centerY" secondItem="dOA-hf-iIU" secondAttribute="centerY" id="D6w-EW-tVt"/>
+                                                            <constraint firstAttribute="trailing" secondItem="MAa-HL-N2L" secondAttribute="trailing" constant="10" id="Jmv-xz-icm"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Sha-ea-S6T" secondAttribute="bottom" id="kfZ-Xc-3dE"/>
+                                                            <constraint firstItem="Sha-ea-S6T" firstAttribute="top" secondItem="dOA-hf-iIU" secondAttribute="top" id="rac-bF-dp5"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6자리 이상, 대문자 포함, 숫자 포함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USP-wq-MUk">
+                                                <rect key="frame" x="40" y="202" width="295" height="11"/>
+                                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="11"/>
+                                                <color key="textColor" red="0.62367820740000002" green="0.62313765290000001" blue="0.64314037560000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YS-Uz-N6J">
+                                                <rect key="frame" x="40" y="237" width="295" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="dEt-rf-Hat"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="18"/>
+                                                <state key="normal" title="다음" backgroundImage="RoundBT">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="MXe-Db-mR5" kind="show" id="lxg-ND-laZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="8" left="40" bottom="8" right="40"/>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKZ-T9-GKp">
+                                        <rect key="frame" x="0.0" y="548" width="375" height="24"/>
+                                        <string key="text">가입함으로써 D-Book의 가입에 동의함.
 서비스 약관 및 개인 정보 보호 정책</string>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="12"/>
-                                <color key="textColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                        <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="12"/>
+                                        <color key="textColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="cVi-mu-JzO">
+                                        <rect key="frame" x="0.0" y="580" width="375" height="112"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DXC-mp-lGs">
+                                        <rect key="frame" x="0.0" y="700" width="375" height="26"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="e8Q-Xh-pC0">
+                                                <rect key="frame" x="102" y="0.0" width="171" height="26"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정이 있으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDw-7g-ooI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="26"/>
+                                                        <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="14"/>
+                                                        <color key="textColor" red="0.62367820740000002" green="0.62313765290000001" blue="0.64314037560000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFA-qO-egG">
+                                                        <rect key="frame" x="129" y="0.0" width="42" height="26"/>
+                                                        <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="14"/>
+                                                        <state key="normal" title="로그인">
+                                                            <color key="titleColor" red="0.29803921570000003" green="0.85098039219999999" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="55" left="0.0" bottom="8" right="0.0"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <viewLayoutGuide key="safeArea" id="7TR-t1-FFm"/>
+                        <constraints>
+                            <constraint firstItem="0uf-2q-FkL" firstAttribute="top" secondItem="b9U-72-Xdx" secondAttribute="top" id="2Va-Px-lv5"/>
+                            <constraint firstItem="0uf-2q-FkL" firstAttribute="leading" secondItem="b9U-72-Xdx" secondAttribute="leading" id="JGC-mP-ItU"/>
+                            <constraint firstItem="b9U-72-Xdx" firstAttribute="bottom" secondItem="0uf-2q-FkL" secondAttribute="bottom" id="TuB-BD-GUx"/>
+                            <constraint firstItem="b9U-72-Xdx" firstAttribute="trailing" secondItem="0uf-2q-FkL" secondAttribute="trailing" id="mkv-w1-u8l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b9U-72-Xdx"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3e3-zQ-ReL"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J96-Yy-q83" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRt-ho-yIX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="458"/>
+            <point key="canvasLocation" x="786" y="487"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="YAk-eg-BCu">
+        <scene sceneID="ds0-oB-nk3">
             <objects>
-                <viewController id="M8p-lK-lUh" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="h3o-8V-bRw">
+                <viewController id="MXe-Db-mR5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uzC-4d-85L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="40" affinity="minX"/>
+                            <userLayoutGuide location="335" affinity="minX"/>
+                        </userGuides>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이메일 인증" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjH-Kc-pVn">
-                                <rect key="frame" x="108" y="159" width="159" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="30"/>
-                                <color key="textColor" red="0.62367820740000002" green="0.62313765290000001" blue="0.64314037560000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="입력하신 이메일로 인증 코드를 보냈습니다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOY-9Y-xsh">
-                                <rect key="frame" x="61" y="215" width="253" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="13"/>
-                                <color key="textColor" red="0.81975728270000003" green="0.81921553609999997" blue="0.83921903369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="인증코드" minimumFontSize="17" background="TextField" translatesAutoresizingMaskIntoConstraints="NO" id="4s5-Pa-oyG">
-                                <rect key="frame" x="40" y="279" width="295" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pak-Og-W1n">
-                                <rect key="frame" x="300" y="294" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9g4-1N-mdU">
-                                <rect key="frame" x="40" y="369" width="295" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="18"/>
-                                <state key="normal" title="D-Book 시작하기" backgroundImage="RoundBT"/>
-                                <state key="disabled" title="D-Book 시작하기" backgroundImage="RoundBT_Disable"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-Mn-Io5">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="TlU-Ih-MDL">
+                                        <rect key="frame" x="40" y="61" width="295" height="163"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="kRO-Hs-tyE">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="68"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 인증" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4On-Bp-6zU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="295" height="30"/>
+                                                        <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="30"/>
+                                                        <color key="textColor" red="0.62367820740000002" green="0.62313765290000001" blue="0.64314037560000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="입력하신 이메일로 인증 코드를 보냈습니다!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZj-dW-P0q">
+                                                        <rect key="frame" x="0.0" y="55" width="295" height="13"/>
+                                                        <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="13"/>
+                                                        <color key="textColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LHU-1l-5rO">
+                                                <rect key="frame" x="0.0" y="113" width="295" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="인증코드" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qAT-gp-ULI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="42y-km-uJT"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cQH-nw-guS">
+                                                        <rect key="frame" x="261" y="13" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="24" id="Amj-a0-2Co"/>
+                                                            <constraint firstAttribute="height" constant="24" id="t1A-OT-aXR"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="qAT-gp-ULI" firstAttribute="top" secondItem="LHU-1l-5rO" secondAttribute="top" id="BBk-Zw-tfJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qAT-gp-ULI" secondAttribute="trailing" id="BER-fD-uNU"/>
+                                                    <constraint firstItem="cQH-nw-guS" firstAttribute="centerY" secondItem="LHU-1l-5rO" secondAttribute="centerY" id="hQz-e3-8EU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cQH-nw-guS" secondAttribute="trailing" constant="10" id="nLx-YF-HNa"/>
+                                                    <constraint firstItem="qAT-gp-ULI" firstAttribute="leading" secondItem="LHU-1l-5rO" secondAttribute="leading" id="pFE-7D-LeO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="qAT-gp-ULI" secondAttribute="bottom" id="rrw-9q-H83"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uW1-ib-8aU">
+                                        <rect key="frame" x="40" y="274" width="295" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="QHJ-fF-MTJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="18"/>
+                                        <state key="normal" title="D-Book 시작하기" backgroundImage="RoundBT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="n4j-NG-Hs0">
+                                        <rect key="frame" x="40" y="374" width="295" height="308"/>
+                                    </view>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="61" left="40" bottom="8" right="40"/>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.98039215686274506" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
-                        <viewLayoutGuide key="safeArea" id="gb9-Lh-DLd"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mIV-Mn-Io5" firstAttribute="leading" secondItem="4tF-em-lb6" secondAttribute="leading" id="WQn-Zy-H8v"/>
+                            <constraint firstItem="4tF-em-lb6" firstAttribute="bottom" secondItem="mIV-Mn-Io5" secondAttribute="bottom" id="ari-st-8Yh"/>
+                            <constraint firstItem="mIV-Mn-Io5" firstAttribute="top" secondItem="4tF-em-lb6" secondAttribute="top" id="gYQ-dp-iB3"/>
+                            <constraint firstItem="4tF-em-lb6" firstAttribute="trailing" secondItem="mIV-Mn-Io5" secondAttribute="trailing" id="pOu-ga-Jxd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4tF-em-lb6"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cxN-m1-YgB">
+                        <barButtonItem key="leftBarButtonItem" image="backBT" id="4O2-fn-e5B"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hzv-mV-ceJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdW-wm-4xn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938" y="457"/>
+            <point key="canvasLocation" x="1514" y="487"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DE6-Ll-3BO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="IUF-54-mo2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t8a-Dy-o3n">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ch7-N0-fFz" kind="relationship" relationship="rootViewController" id="ecj-r9-lZD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBS-FU-SeQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="487"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logo" width="97" height="182"/>
         <image name="RoundBT" width="295" height="50"/>
-        <image name="RoundBT_Disable" width="295" height="50"/>
-        <image name="TextField" width="295" height="50"/>
+        <image name="backBT" width="28" height="28"/>
     </resources>
 </document>
