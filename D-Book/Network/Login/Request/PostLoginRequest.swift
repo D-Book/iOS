@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PostLoginRequest : Encodable{
+class PostLoginRequest: Encodable{
     var id : String = ""
     var pw : String = ""
     
