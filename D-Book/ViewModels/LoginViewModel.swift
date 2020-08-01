@@ -37,12 +37,27 @@ class LoginViewModel: ViewModelType {
         loginRequest.pw = self.pw.value
         
         let response = input.trigger
-            .do(onNext: { [weak self] in self?.isLoading.accept(true)})
             .flatMapLatest {
                 self.networkClient.postRequest(PostLogin.Response.self, endpoint: "", param: self.loginRequest)
             }
-            .do(onNext: { [weak self] in self?.isLoading.accept(false)})
-        
+            
+        response
+            .subscribe(
+                onNext : { response in
+//                    KeychainService.username = self.emailIdViewModel.data.value
+//                    KeychainService.password =  self.passwordViewModel.data.value
+//
+//                    AuthController.signIn(token: response.data!.token!, refreshToken: response.data!.refreshToken!)
+                        
+                    self.isLoading.accept(false)
+                    self.isSuccess.accept(true)
+                },
+                onError : { error in
+                    self.isLoading.accept(false)
+                    self.errorMsg.accept(error.localizedDescription)
+                }
+            ).disposed(by : disposeBag)
+            
         return Output(response: response.asDriver(onErrorJustReturn: .init()))
     }
     

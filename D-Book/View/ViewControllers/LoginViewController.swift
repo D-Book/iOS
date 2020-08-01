@@ -25,7 +25,6 @@ class LoginViewController: UIViewController {
         bindViewModel()
     }
     
-
 }
 
 extension LoginViewController {
@@ -43,9 +42,25 @@ extension LoginViewController {
             .disposed(by: disposeBag)
         
         output.response
-            .drive(onNext: { response in
+            .drive(onNext: { _ in
                 
             }).disposed(by: disposeBag)
+    }
+    
+    func configureCallback() {
+        
+        viewModel.isLoading
+            .bind { [weak self] isLoading in
+                if isLoading {
+//                    self?.startIndicating()
+                }
+            }.disposed(by: disposeBag)
+        
+        viewModel.isSuccess
+            .bind { _ in
+                //navigate to main scene
+            }.disposed(by: disposeBag)
+        
     }
     
 }
