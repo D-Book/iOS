@@ -15,6 +15,11 @@
 		F26A78EF24CBACE600EE4378 /* ResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A78EE24CBACE600EE4378 /* ResponseProtocol.swift */; };
 		F26A78F224CBADAB00EE4378 /* PostLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A78F124CBADAB00EE4378 /* PostLogin.swift */; };
 		F26A78F824CD298600EE4378 /* PostLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A78F724CD298600EE4378 /* PostLoginRequest.swift */; };
+		F2762A3324ED3E5F00CB6434 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2762A3224ED3E5F00CB6434 /* TokenManager.swift */; };
+		F2762A3524ED41B200CB6434 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2762A3424ED41B200CB6434 /* User.swift */; };
+		F2762A3724ED43BB00CB6434 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2762A3624ED43BB00CB6434 /* DatabaseManager.swift */; };
+		F2762A3A24ED44B100CB6434 /* UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2762A3924ED44B100CB6434 /* UIActivityIndicatorView.swift */; };
+		F2762A3C24ED454B00CB6434 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2762A3B24ED454B00CB6434 /* UIViewController.swift */; };
 		F2872FC5248A6B4A0001F77C /* BookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2872FC4248A6B4A0001F77C /* BookListTableViewCell.swift */; };
 		F2A167FD248A2CF5007502D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A167FC248A2CF5007502D9 /* AppDelegate.swift */; };
 		F2A16804248A2CF5007502D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A16802248A2CF5007502D9 /* Main.storyboard */; };
@@ -34,6 +39,11 @@
 		F26A78EE24CBACE600EE4378 /* ResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseProtocol.swift; sourceTree = "<group>"; };
 		F26A78F124CBADAB00EE4378 /* PostLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLogin.swift; sourceTree = "<group>"; };
 		F26A78F724CD298600EE4378 /* PostLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLoginRequest.swift; sourceTree = "<group>"; };
+		F2762A3224ED3E5F00CB6434 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		F2762A3424ED41B200CB6434 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F2762A3624ED43BB00CB6434 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		F2762A3924ED44B100CB6434 /* UIActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorView.swift; sourceTree = "<group>"; };
+		F2762A3B24ED454B00CB6434 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		F2872FC4248A6B4A0001F77C /* BookListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewCell.swift; sourceTree = "<group>"; };
 		F2A167F9248A2CF5007502D9 /* D-Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D-Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A167FC248A2CF5007502D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +119,44 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		F2762A2F24ED324700CB6434 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F2872FC4248A6B4A0001F77C /* BookListTableViewCell.swift */,
+				F2A16802248A2CF5007502D9 /* Main.storyboard */,
+				F2F15FD624BBDE92001FA06B /* Login.storyboard */,
+				F2762A3024ED326400CB6434 /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F2762A3024ED326400CB6434 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F26A78E524CAB9C400EE4378 /* LoginViewController.swift */,
+				F26A78E924CABAA100EE4378 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F2762A3124ED3E4500CB6434 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F2762A3224ED3E5F00CB6434 /* TokenManager.swift */,
+				F2762A3624ED43BB00CB6434 /* DatabaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F2762A3824ED446C00CB6434 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F2762A3924ED44B100CB6434 /* UIActivityIndicatorView.swift */,
+				F2762A3B24ED454B00CB6434 /* UIViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		F2A167F0248A2CF5007502D9 = {
 			isa = PBXGroup;
 			children = (
@@ -130,10 +178,11 @@
 		F2A167FB248A2CF5007502D9 /* D-Book */ = {
 			isa = PBXGroup;
 			children = (
+				F2762A3824ED446C00CB6434 /* Extension */,
+				F2762A3124ED3E4500CB6434 /* Managers */,
 				F2B3E6DF24A974CC00AE23F1 /* Application */,
 				F2D05D3424AADC0400E229CD /* Model */,
-				F2D05D3524AADC0E00E229CD /* View */,
-				F2D05D3624AADC1600E229CD /* ViewModels */,
+				F2762A2F24ED324700CB6434 /* Scenes */,
 				F26A78EB24CBA94500EE4378 /* Protocols */,
 				F2D05D3A24AADD9000E229CD /* Network */,
 				F2D05D3B24AADFCB00E229CD /* Resources */,
@@ -162,51 +211,9 @@
 		F2D05D3424AADC0400E229CD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F2762A3424ED41B200CB6434 /* User.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		F2D05D3524AADC0E00E229CD /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F2D05D3824AADC2A00E229CD /* Storyboards */,
-				F2D05D3724AADC1F00E229CD /* ViewControllers */,
-				F2D05D3924AADD3F00E229CD /* Cells */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F2D05D3624AADC1600E229CD /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				F26A78E924CABAA100EE4378 /* LoginViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		F2D05D3724AADC1F00E229CD /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				F2872FC4248A6B4A0001F77C /* BookListTableViewCell.swift */,
-				F26A78E524CAB9C400EE4378 /* LoginViewController.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		F2D05D3824AADC2A00E229CD /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				F2A16802248A2CF5007502D9 /* Main.storyboard */,
-				F2F15FD624BBDE92001FA06B /* Login.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		F2D05D3924AADD3F00E229CD /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		F2D05D3A24AADD9000E229CD /* Network */ = {
@@ -344,15 +351,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2762A3C24ED454B00CB6434 /* UIViewController.swift in Sources */,
 				F26A78E424CA8ABE00EE4378 /* NetworkClient.swift in Sources */,
 				F2872FC5248A6B4A0001F77C /* BookListTableViewCell.swift in Sources */,
 				F26A78EF24CBACE600EE4378 /* ResponseProtocol.swift in Sources */,
 				F26A78F824CD298600EE4378 /* PostLoginRequest.swift in Sources */,
 				F26A78EA24CABAA100EE4378 /* LoginViewModel.swift in Sources */,
+				F2762A3A24ED44B100CB6434 /* UIActivityIndicatorView.swift in Sources */,
 				F2A167FD248A2CF5007502D9 /* AppDelegate.swift in Sources */,
 				F26A78E624CAB9C400EE4378 /* LoginViewController.swift in Sources */,
+				F2762A3724ED43BB00CB6434 /* DatabaseManager.swift in Sources */,
 				F26A78F224CBADAB00EE4378 /* PostLogin.swift in Sources */,
 				F26A78ED24CBA96500EE4378 /* ViewModelType.swift in Sources */,
+				F2762A3324ED3E5F00CB6434 /* TokenManager.swift in Sources */,
+				F2762A3524ED41B200CB6434 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -482,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
