@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.2.1)
+  - KeychainAccess (4.2.0)
   - Realm (5.0.1):
     - Realm/Headers (= 5.0.1)
   - Realm/Headers (5.0.1)
@@ -19,6 +20,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - KeychainAccess
   - RealmSwift
   - RxAlamofire
   - RxCocoa
@@ -27,6 +29,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - KeychainAccess
     - Realm
     - RealmSwift
     - RxAlamofire
@@ -36,6 +39,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  KeychainAccess: 3f760109aa99b05d0f231e28b22642da7153e38a
   Realm: d36cfc336d76d2e15b13651beb6050f49354de4b
   RealmSwift: f29ae0ceaf4fbaf4803c40bbebd838ea2beb903a
   RxAlamofire: 15502b290253fab68688dafd60914c6390e9cc73
@@ -43,6 +47,6 @@ SPEC CHECKSUMS:
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
-PODFILE CHECKSUM: 6dc0a0e64edda87575d252e2bd2c804a270b592a
+PODFILE CHECKSUM: 10aabbe771e1637262919e336a2c14c13b15ec87
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-D-Book/Pods-D-Book-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework
 ${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
 ${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
 ${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework
