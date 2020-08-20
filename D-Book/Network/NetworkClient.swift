@@ -20,33 +20,34 @@ class NetworkClient {
         
         let header: HTTPHeaders = ["Content-Type": "application/json"]
         
-        RxAlamofire.request(.post, self.BASE_URL + endpoint, parameters: param.dictionary, encoding: JSONEncoding.default, headers: header)
+        return RxAlamofire.request(.post, self.BASE_URL + endpoint, parameters: param.dictionary, encoding: JSONEncoding.default, headers: header)
             .responseJSON()
             .map { response -> T in
                 if let data = response.data {
                     let decodeResponse = try JSONDecoder().decode(T.self, from: data)
                     
+                    return decodeResponse
                     if decodeResponse.status == 200 {
                         return decodeResponse
                     } else if decodeResponse.status == 410 {
                         // renewal token
                     }
-                    
                 } else {
                     throw NetworkError.notConnected
                 }
-            }
+        }
+        
     }
     
-//    func postRequest<T: ResponseProtocol>(_ type: T.Type, endpoint: String, param: Encodable) -> Observable<T> {
-//        return Observable.create { _ -> Disposable in
-//            RxAlamofire.request(.post, self.BASE_URL + endpoint, parameters: param).responseJSON()
-//                .subscribe(onNext: { response in
-//                    return response
-//                })
-//        }
-//
-//    }
+    //    func postRequest<T: ResponseProtocol>(_ type: T.Type, endpoint: String, param: Encodable) -> Observable<T> {
+    //        return Observable.create { _ -> Disposable in
+    //            RxAlamofire.request(.post, self.BASE_URL + endpoint, parameters: param).responseJSON()
+    //                .subscribe(onNext: { response in
+    //                    return response
+    //                })
+    //        }
+    //
+    //    }
     
 }
 

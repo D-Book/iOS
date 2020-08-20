@@ -65,6 +65,12 @@ extension LoginViewController {
                 (UIApplication.shared.delegate as? AppDelegate)?.changeRootViewController(mainTabBarController)
             }.disposed(by: disposeBag)
         
+        viewModel.errorMsg.bind { errorMessage in
+            if errorMessage != "n" {
+                self.stopIndicatingActivity()
+                self.warningAlert(title: "error", message: errorMessage)
+            }
+        }.disposed(by: disposeBag)
     }
     
 }

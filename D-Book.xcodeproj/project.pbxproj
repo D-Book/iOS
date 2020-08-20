@@ -178,9 +178,9 @@
 		F2A167FB248A2CF5007502D9 /* D-Book */ = {
 			isa = PBXGroup;
 			children = (
+				F2B3E6DF24A974CC00AE23F1 /* Application */,
 				F2762A3824ED446C00CB6434 /* Extension */,
 				F2762A3124ED3E4500CB6434 /* Managers */,
-				F2B3E6DF24A974CC00AE23F1 /* Application */,
 				F2D05D3424AADC0400E229CD /* Model */,
 				F2762A2F24ED324700CB6434 /* Scenes */,
 				F26A78EB24CBA94500EE4378 /* Protocols */,

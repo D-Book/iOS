@@ -44,11 +44,8 @@ class LoginViewModel: ViewModelType {
         response
             .subscribe(
                 onNext: { response in
-//                    KeychainService.username = self.emailIdViewModel.data.value
-//                    KeychainService.password =  self.passwordViewModel.data.value
-//
-//                    AuthController.signIn(token: response.data!.token!, refreshToken: response.data!.refreshToken!)
                     
+                    UserDefaults.standard.set(true, forKey: "loginState")
                     TokenManager.shared.token = response.accessToken
                     
                     response.email
