@@ -36,14 +36,14 @@ extension UIViewController {
         DispatchQueue.main.async {
             self.view.addSubview(self.indicator)
             self.indicator.startAnimating()
-            UIApplication.shared.beginIgnoringInteractionEvents() // if desired
+            self.view.isUserInteractionEnabled = false
         }
     }
     
     public func stopIndicatingActivity() {
         DispatchQueue.main.async {
             self.indicator.stopAnimating()
-            UIApplication.shared.endIgnoringInteractionEvents()
+            self.view.isUserInteractionEnabled = true
         }
     }
 }
