@@ -14,7 +14,7 @@ import RxAlamofire
 
 class NetworkClient {
     
-    var BASE_URL = ""
+    var BASE_URL = "http://10.80.162.210:8080/"
     
     func postRequest<T: ResponseProtocol>(_ type:  T.Type, endpoint: String, param: Encodable) -> Observable<T> {
         
@@ -26,12 +26,17 @@ class NetworkClient {
                 if let data = response.data {
                     let decodeResponse = try JSONDecoder().decode(T.self, from: data)
                     
-                    return decodeResponse
+                    print(decodeResponse.status)
                     if decodeResponse.status == 200 {
                         return decodeResponse
-                    } else if decodeResponse.status == 410 {
-                        // renewal token
                     }
+//                    else if decodeResponse.status == 410 {
+//                        // renewal token
+//                    }
+                    else {
+                        throw NetworkError.errorStatusCode(statusCode: decodeResponse.status ?? 0)
+                    }
+                    
                 } else {
                     throw NetworkError.notConnected
                 }
