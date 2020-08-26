@@ -9,17 +9,11 @@
 import Foundation
 
 class PostLoginRequest: Encodable{
-    var id : String = ""
-    var pw : String = ""
-    
-    convenience init(id : String, pw : String) {
-        self.init()
-        self.id = id
-        self.pw = pw
-    }
+    var email : String = ""
+    var password : String = ""
     
     private enum CodingKeys: String, CodingKey {
-        case id
-        case pw
+        case email
+        case password
     }
 }
