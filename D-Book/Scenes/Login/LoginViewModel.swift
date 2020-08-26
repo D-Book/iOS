@@ -33,27 +33,25 @@ class LoginViewModel: ViewModelType {
 
     func transform(input: Input) -> Output {
         
-        loginRequest.id = self.id.value
-        loginRequest.pw = self.pw.value
+        loginRequest.email = self.id.value
+        loginRequest.password = self.pw.value
         
-        let response = input.loginTrigger
+        input.loginTrigger
             .flatMapLatest {
-                self.networkClient.postRequest(PostLogin.self, endpoint: "", param: self.loginRequest)
-            }
-            
-        response
-            .subscribe(
+                self.networkClient.postRequest(PostLogin.self, endpoint: "users/logins", param: self.loginRequest)
+            }.subscribe(
                 onNext: { response in
-                    
+                    print("onnext")
                     UserDefaults.standard.set(true, forKey: "loginState")
-                    TokenManager.shared.token = response.accessToken
+                    TokenManager.shared.token = response.token
                     
-                    response.email
+                    print(response.email)
                     
                     self.isLoading.accept(false)
                     self.isSuccess.accept(true)
                 },
                 onError: { error in
+                    print("onerror")
                     self.isLoading.accept(false)
                     self.errorMsg.accept(error.localizedDescription)
                 }

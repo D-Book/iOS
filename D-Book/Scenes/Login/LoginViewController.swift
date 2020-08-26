@@ -21,8 +21,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         bindViewModel()
+        configureCallback()
     }
     
 }
@@ -54,21 +55,23 @@ extension LoginViewController {
                 if isLoading {
                     self?.startIndicatingActivity()
                 }
-            }.disposed(by: disposeBag)
+        }.disposed(by: disposeBag)
         
         viewModel.isSuccess
             .bind { isSuccess in
-                self.stopIndicatingActivity()
-                
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
-                (UIApplication.shared.delegate as? AppDelegate)?.changeRootViewController(mainTabBarController)
-            }.disposed(by: disposeBag)
+                if isSuccess {
+                    self.stopIndicatingActivity()
+                    
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
+                    (UIApplication.shared.delegate as? AppDelegate)?.changeRootViewController(mainTabBarController)
+                }
+        }.disposed(by: disposeBag)
         
         viewModel.errorMsg.bind { errorMessage in
-            if errorMessage != "n" {
+            if errorMessage != "" {
                 self.stopIndicatingActivity()
-                self.warningAlert(title: "error", message: errorMessage)
+                self.warningAlert(title: "오류가 발생했습니다.", message: errorMessage)
             }
         }.disposed(by: disposeBag)
     }
