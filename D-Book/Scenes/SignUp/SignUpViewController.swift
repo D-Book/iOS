@@ -16,7 +16,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var dismissToLogin: UIButton!
-    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var completeButton: UIButton!
     
     let disposeBag = DisposeBag()
     let viewModel = SignUpViewModel()
@@ -26,40 +26,58 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         
         bindViewModel()
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "navigateToEmailCheck", let emailCheckViewController = segue.destination as? EmailCheckViewController {
-            EmailCheckViewController.password = self.passwordField.text
-        }
+        configureCallback()
     }
 }
-    
-    // MARK: - BindViewModel
-    extension SignUpViewController {
-        func bindViewModel() {
-            
-            let input = SignUpViewModel.Input()
-            let output = viewModel.transform(input: input)
-            
-            dismissToLogin.rx.tap
-                .subscribe(onNext: {
-                    self.dismiss(animated: true, completion: nil)
-                }).disposed(by: disposeBag)
-            
-            emailField.rx.text.orEmpty
-                .bind(to: viewModel.email)
-                .disposed(by: disposeBag)
-            
-            passwordField.rx.text.orEmpty
-                .bind(to: viewModel.password)
-                .disposed(by: disposeBag)
-            
-            output.nextButtonEnabled
-                .drive(nextButton.rx.isEnabled)
-                .disposed(by: disposeBag)
-            
-            
-            
-        }
+
+// MARK: - BindViewModel
+extension SignUpViewController {
+    func bindViewModel() {
+        
+        let input = SignUpViewModel.Input(nextTrigger: completeButton.rx.tap.asDriver())
+        let output = viewModel.transform(input: input)
+        
+        dismissToLogin.rx.tap
+            .subscribe(onNext: {
+                self.dismiss(animated: true, completion: nil)
+            }).disposed(by: disposeBag)
+        
+        emailField.rx.text.orEmpty
+            .bind(to: viewModel.email)
+            .disposed(by: disposeBag)
+        
+        passwordField.rx.text.orEmpty
+            .bind(to: viewModel.password)
+            .disposed(by: disposeBag)
+        
+        output.nextButtonEnabled
+            .drive(completeButton.rx.isEnabled)
+            .disposed(by: disposeBag)
+    }
+}
+
+// MARK: - ConfigureCallback
+extension SignUpViewController {
+    func configureCallback() {
+        viewModel.isLoading
+            .bind { [weak self] isLoading in
+                if isLoading { self?.startIndicatingActivity() }
+        }.disposed(by: disposeBag)
+        
+        viewModel.isSuccess
+            .bind { isSuccess in
+                if isSuccess {
+                    self.stopIndicatingActivity()
+                    
+                    self.navigationController?.popToRootViewController(animated: true)
+                }
+        }.disposed(by: disposeBag)
+        
+        viewModel.errorMsg.bind { errorMessage in
+            if errorMessage != "" {
+                self.stopIndicatingActivity()
+                self.warningAlert(title: "오류가 발생했습니다.", message: errorMessage)
+            }
+        }.disposed(by: disposeBag)
+    }
 }
