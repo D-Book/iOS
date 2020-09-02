@@ -14,36 +14,37 @@ import RxAlamofire
 
 class NetworkClient {
     
-    var BASE_URL = "http://10.80.162.210:8080/"
+    static let shared = NetworkClient()
+    private init() {}
     
+    let BASE_URL = "http://10.80.162.210:8080/"
+    
+    let session = Session(eventMonitors: [ AlamofireLogger() ])
+    
+    // MARK: - Post
     func postRequest<T: ResponseProtocol>(_ type:  T.Type, endpoint: String, param: Encodable) -> Observable<T> {
         
         let header: HTTPHeaders = ["Content-Type": "application/json"]
         
         return RxAlamofire.request(.post, self.BASE_URL + endpoint, parameters: param.dictionary, encoding: JSONEncoding.default, headers: header)
             .responseJSON()
+            .debug()
             .map { response -> T in
                 if let data = response.data {
                     let decodeResponse = try JSONDecoder().decode(T.self, from: data)
-                    
-                    print(decodeResponse.status)
                     if decodeResponse.status == 200 {
                         return decodeResponse
+                    } else {
+//                        throw NetworkError.errorStatusCode(statusCode: decodeResponse.status)
+                        return decodeResponse
                     }
-//                    else if decodeResponse.status == 410 {
-//                        // renewal token
-//                    }
-                    else {
-                        throw NetworkError.errorStatusCode(statusCode: decodeResponse.status ?? 0)
-                    }
-                    
                 } else {
                     throw NetworkError.notConnected
                 }
         }
-        
     }
     
+    // MARK: - Get
     //    func postRequest<T: ResponseProtocol>(_ type: T.Type, endpoint: String, param: Encodable) -> Observable<T> {
     //        return Observable.create { _ -> Disposable in
     //            RxAlamofire.request(.post, self.BASE_URL + endpoint, parameters: param).responseJSON()
