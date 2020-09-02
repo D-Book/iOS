@@ -25,13 +25,12 @@ class LoginViewController: UIViewController {
         bindViewModel()
         configureCallback()
     }
-    
 }
 
+// MARK: - BindViewModel
 extension LoginViewController {
-    
     func bindViewModel() {
-        let input = LoginViewModel.Input(loginTrigger: loginButton.rx.tap.asObservable())
+        let input = LoginViewModel.Input(loginTrigger: loginButton.rx.tap.asDriver())
         let output = viewModel.transform(input: input)
         
         emailField.rx.text.orEmpty
@@ -43,18 +42,17 @@ extension LoginViewController {
             .disposed(by: disposeBag)
         
         output.loginButtonEnabled
-            .drive(onNext: { [weak self] isEnabled in
-                self?.loginButton.isEnabled = isEnabled
-            }).disposed(by: disposeBag)
+            .drive(loginButton.rx.isEnabled)
+            .disposed(by: disposeBag)
     }
-    
+}
+
+// MARK: - ConfigureCallback
+extension LoginViewController {
     func configureCallback() {
-        
         viewModel.isLoading
             .bind { [weak self] isLoading in
-                if isLoading {
-                    self?.startIndicatingActivity()
-                }
+                if isLoading { self?.startIndicatingActivity() }
         }.disposed(by: disposeBag)
         
         viewModel.isSuccess
@@ -75,5 +73,4 @@ extension LoginViewController {
             }
         }.disposed(by: disposeBag)
     }
-    
 }
