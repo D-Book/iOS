@@ -8,11 +8,11 @@
 
 import Foundation
 
-class PostLoginRequest: Encodable{
-    var email : String = ""
-    var password : String = ""
+struct PostLoginRequest: Encodable {
+    var email: String
+    var password: String
     
-    private enum CodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case email
         case password
     }

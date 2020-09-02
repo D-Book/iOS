@@ -9,8 +9,8 @@
 import Foundation
 
 struct DefaultResponse: ResponseProtocol {
-    var status: Int?
-    var message: String?
+    var status: Int
+    var message: String
     
     enum CodingKeys : String, CodingKey {
         case status

@@ -9,6 +9,6 @@
 import Foundation
 
 protocol ResponseProtocol: Decodable {
-    var status: Int? { get set }
-    var message: String? { get set }
+    var status: Int { get set }
+    var message: String { get set }
 }
