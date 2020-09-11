@@ -19,8 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let loginStoryBoard = UIStoryboard(name: "Login", bundle: nil)
         
         let isLogin = UserDefaults.standard.bool(forKey: "loginState")
+        print("로그인 여부: \(isLogin)")
         
-        if isLogin {
+        if isLogin == true {
             let mainTabBarController = mainStoryboard.instantiateViewController(identifier: "MainTabBarController")
             window?.rootViewController = mainTabBarController
         } else {

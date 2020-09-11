@@ -23,29 +23,31 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="1462.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Book List View Controller-->
         <scene sceneID="MDu-s3-xqX">
             <objects>
-                <viewController id="TP4-GE-9Yp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookListViewController" id="TP4-GE-9Yp" customClass="BookListViewController" customModule="D_Book" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uxb-bq-snc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5lY-Gf-lbc">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="5lY-Gf-lbc" firstAttribute="leading" secondItem="vb0-fq-cL5" secondAttribute="leading" id="9ze-Wk-k4D"/>
-                            <constraint firstItem="5lY-Gf-lbc" firstAttribute="top" secondItem="Uxb-bq-snc" secondAttribute="top" id="Nlz-ns-vS2"/>
+                            <constraint firstItem="5lY-Gf-lbc" firstAttribute="top" secondItem="vb0-fq-cL5" secondAttribute="top" id="Nlz-ns-vS2"/>
                             <constraint firstItem="5lY-Gf-lbc" firstAttribute="trailing" secondItem="vb0-fq-cL5" secondAttribute="trailing" id="bSA-sz-tCt"/>
                             <constraint firstItem="5lY-Gf-lbc" firstAttribute="bottom" secondItem="vb0-fq-cL5" secondAttribute="bottom" id="eeC-7q-R0A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vb0-fq-cL5"/>
                     </view>
-                    <navigationItem key="navigationItem" id="If6-LP-qb0"/>
+                    <navigationItem key="navigationItem" id="If6-LP-qb0">
+                        <nil key="title"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dW-mX-6T5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,14 +71,14 @@
             </objects>
             <point key="canvasLocation" x="130" y="1139"/>
         </scene>
-        <!--Item 1-->
+        <!--책 목록-->
         <scene sceneID="KC5-fj-rl3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lvF-C4-GSk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="rcE-BJ-KnV"/>
+                    <tabBarItem key="tabBarItem" title="책 목록" id="rcE-BJ-KnV"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="wOD-gH-1FZ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wOD-gH-1FZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -88,11 +90,11 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="814.95535714285711"/>
         </scene>
-        <!--Item 2-->
+        <!--내 서재-->
         <scene sceneID="a2W-5u-1Sw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="65H-lY-oZS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Fye-zj-nKU"/>
+                    <tabBarItem key="tabBarItem" title="내 서재" id="Fye-zj-nKU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Io9-Ti-qkw">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
