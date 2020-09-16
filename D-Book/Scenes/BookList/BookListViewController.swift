@@ -7,46 +7,47 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class BookListViewController: UIViewController, UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        
-    }
+class BookListViewController: UIViewController {
     
-
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
+    let disposeBag = DisposeBag()
     let searchController = UISearchController(searchResultsController: nil)
+    let viewModel = BookListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configureUI()
+        bindViewModel()
     }
     
     func configureUI() {
-        self.navigationItem.largeTitleDisplayMode = .always
-        
-//        self.searchController.searchResultsUpdater = self
-//        self.definesPresentationContext = true
-        
-        searchController.searchBar.placeholder = "Biblioteket ditt"
-        searchController.searchBar.showsScopeBar = true
-        searchController.searchBar.barTintColor = UIColor(white: 0.9, alpha: 0.1)
-        searchController.searchBar.scopeButtonTitles = ["Apple Music", "Biblioteket ditt"]
-
-//        let searchBar = UISearchBar()
-//        searchBar.placeholder = "Biblioteket ditt"
-//        searchBar.showsScopeBar = true
-//        searchBar.barTintColor = UIColor(white: 0.9, alpha: 0.1)
-//        searchBar.scopeButtonTitles = ["Apple Music", "Biblioteket ditt"]
-        
-        
-
-        // To change UISegmentedControl color only when appeared in UISearchBar
-        UISegmentedControl.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = .clear
-
+        self.definesPresentationContext = true
+        self.searchController.searchBar.placeholder = "책 검색하기"
+        self.searchController.hidesNavigationBarDuringPresentation = false
         self.navigationItem.titleView = searchController.searchBar
 
-//        searchController.hidesNavigationBarDuringPresentation = false
+        self.navigationController?.navigationBar.tintColor = UIColor(red: 0.80, green: 0.61, blue: 0.63, alpha: 1.00)
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "BarBT_Setting"), style: .plain, target: nil, action: nil)
+        
+    }
+    
+    func bindViewModel() {
+        searchController.searchBar.rx.text.orEmpty
+            .bind(to: viewModel.searchText)
+            .disposed(by: disposeBag)
+        
+        searchController.searchBar.rx.searchButtonClicked
+        
+        let input = BookListViewModel.Input()
+        let output = viewModel.transform(input: input)
+        
         
     }
     

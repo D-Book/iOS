@@ -21,7 +21,7 @@ class BookListViewModel {
         
     }
     
-    func transform() -> Output {
+    func transform(input: Input) -> Output {
         
         return Output()
     }
