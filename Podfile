@@ -14,5 +14,7 @@ target 'D-Book' do
   
   pod 'RealmSwift'
   pod 'KeychainAccess'
+  
+  pod 'Kingfisher'
 
 end
