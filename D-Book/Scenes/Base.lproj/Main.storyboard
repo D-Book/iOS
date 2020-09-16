@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eQW-do-xXW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eQW-do-xXW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -32,22 +32,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5lY-Gf-lbc">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="132" width="414" height="681"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QRW-dO-UDo">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="A4W-c7-5dY">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="9O9-df-Reh">
+                                            <rect key="frame" x="20" y="5.5" width="374" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="전체 보기"/>
+                                                <segment title="카테고리별 보기"/>
+                                            </segments>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="5lY-Gf-lbc" firstAttribute="leading" secondItem="vb0-fq-cL5" secondAttribute="leading" id="9ze-Wk-k4D"/>
-                            <constraint firstItem="5lY-Gf-lbc" firstAttribute="top" secondItem="vb0-fq-cL5" secondAttribute="top" id="Nlz-ns-vS2"/>
+                            <constraint firstItem="QRW-dO-UDo" firstAttribute="top" secondItem="vb0-fq-cL5" secondAttribute="top" id="LdQ-7X-t7F"/>
+                            <constraint firstItem="QRW-dO-UDo" firstAttribute="leading" secondItem="vb0-fq-cL5" secondAttribute="leading" id="Sqp-PR-ble"/>
+                            <constraint firstAttribute="trailing" secondItem="QRW-dO-UDo" secondAttribute="trailing" id="Xio-4g-4MV"/>
                             <constraint firstItem="5lY-Gf-lbc" firstAttribute="trailing" secondItem="vb0-fq-cL5" secondAttribute="trailing" id="bSA-sz-tCt"/>
                             <constraint firstItem="5lY-Gf-lbc" firstAttribute="bottom" secondItem="vb0-fq-cL5" secondAttribute="bottom" id="eeC-7q-R0A"/>
+                            <constraint firstItem="5lY-Gf-lbc" firstAttribute="top" secondItem="QRW-dO-UDo" secondAttribute="bottom" id="xJx-5X-w6S"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vb0-fq-cL5"/>
                     </view>
                     <navigationItem key="navigationItem" id="If6-LP-qb0">
                         <nil key="title"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segmentedControl" destination="9O9-df-Reh" id="kO9-Kr-C6r"/>
+                        <outlet property="tableView" destination="5lY-Gf-lbc" id="3Ep-xW-Ffg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dW-mX-6T5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
