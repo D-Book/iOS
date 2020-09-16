@@ -27,7 +27,7 @@ class SignUpViewModel: ViewModelType {
     }
     
     struct Output {
-        let nextButtonEnabled: Driver<Bool>
+        let completeButtonEnabled: Driver<Bool>
     }
     
 }
@@ -44,7 +44,7 @@ extension SignUpViewModel {
             return !$0.isEmpty && !$1.isEmpty && !$2
         }.asDriver(onErrorJustReturn: false)
         
-        return Output(nextButtonEnabled: signUpButtonEnabled)
+        return Output(completeButtonEnabled: signUpButtonEnabled)
     }
 }
 
@@ -52,19 +52,21 @@ extension SignUpViewModel {
 extension SignUpViewModel {
     func postSignUpRequest() {
         
-        let signUpRequest = PostLoginRequest(email: email.value, password: password.value)
+        let signUpRequest = PostLoginRequest(email: email.value, password: password.value) // 로그인 request 재활용
         
         self.isLoading.accept(true)
-        self.networkClient.postRequest(DefaultResponse.self, endpoint: "users/signup", param: signUpRequest)
-        .subscribe(
-            onNext: { [weak self] response in
-                self?.isLoading.accept(false)
-                self?.isSuccess.accept(true)
-            },
-            onError: { [weak self] error in
-                guard let error = error as? DefaultResponse else { return }
-                self?.errorMsg.accept(error.message)
-            }
-        ).disposed(by: disposeBag)
+        self.networkClient.postRequest(DefaultResponse.self, endpoint: "/users/signup", param: signUpRequest)
+            .subscribe(
+                onNext: { [weak self] response in
+                    self?.isLoading.accept(false)
+                    self?.isSuccess.accept(true)
+                },
+                onError: { [weak self] error in
+                    guard let error = error as? DefaultResponse else { return }
+                    self?.errorMsg.accept(error.message)
+                }
+            ).disposed(by: disposeBag)
+        
+        
     }
 }

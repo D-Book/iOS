@@ -50,7 +50,7 @@ extension SignUpViewController {
             .bind(to: viewModel.password)
             .disposed(by: disposeBag)
         
-        output.nextButtonEnabled
+        output.completeButtonEnabled
             .drive(completeButton.rx.isEnabled)
             .disposed(by: disposeBag)
     }
