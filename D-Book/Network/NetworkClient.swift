@@ -17,7 +17,7 @@ class NetworkClient {
     static let shared = NetworkClient()
     private init() {}
     
-    let BASE_URL = "http://10.80.162.210:8080/"
+    let BASE_URL = "http://192.168.10.174"
     
     let session = Session(eventMonitors: [ AlamofireLogger() ])
     
