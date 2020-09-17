@@ -11,10 +11,11 @@ import RxCocoa
 
 class BookListViewModel {
     
+    let disposeBag = DisposeBag()
     let searchText = BehaviorRelay(value: "")
     
     struct Input {
-        
+        let searchButton: Driver<Void>
     }
     
     struct Output {
@@ -23,9 +24,17 @@ class BookListViewModel {
     
     func transform(input: Input) -> Output {
         
+        input.searchButton
+            .drive(onNext: { [weak self] in
+                self?.searchBook()
+            }).disposed(by: disposeBag)
+        
         return Output()
     }
     
+    func searchBook() {
+        
+    }
     
     
 }

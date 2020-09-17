@@ -43,10 +43,9 @@ class BookListViewController: UIViewController {
             .bind(to: viewModel.searchText)
             .disposed(by: disposeBag)
         
-        searchController.searchBar.rx.searchButtonClicked
-        
-        let input = BookListViewModel.Input()
+        let input = BookListViewModel.Input(searchButton: searchController.searchBar.rx.searchButtonClicked.asDriver())
         let output = viewModel.transform(input: input)
+        
         
         
     }
