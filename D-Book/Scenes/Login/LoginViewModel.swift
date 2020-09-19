@@ -53,10 +53,9 @@ extension LoginViewModel {
             let loginRequest = PostLoginRequest(email: self.id.value, password: self.pw.value)
             
             self.isLoading.accept(true)
-            self.networkClient.postRequest(PostLogin.self, endpoint: "users/logins", param: loginRequest)
+            self.networkClient.postRequest(PostLogin.self, endpoint: "/users/logins", param: loginRequest)
                 .subscribe(
                     onNext: { response in
-                        print("onNext")
                         UserDefaults.standard.set(true, forKey: "loginState")
                         
                         TokenManager.shared.token = response.token
@@ -73,7 +72,6 @@ extension LoginViewModel {
                         self.isSuccess.accept(true)
                     },
                     onError: { error in
-                        print("onError")
                         self.isLoading.accept(false)
 //                        guard let error = error as? PostLogin else { return }
                         self.errorMsg.accept(error.localizedDescription)
