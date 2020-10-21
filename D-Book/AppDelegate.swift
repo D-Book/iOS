@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let loginStoryBoard = UIStoryboard(name: "Login", bundle: nil)
         
-        let isLogin = UserDefaults.standard.bool(forKey: "loginState")
+//        let isLogin = UserDefaults.standard.bool(forKey: "loginState")
+        let isLogin = true
         print("로그인 여부: \(isLogin)")
         
         if isLogin == true {

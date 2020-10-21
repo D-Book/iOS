@@ -12,26 +12,22 @@
 		F22B4E0E24F67F8F00873DEC /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B4E0D24F67F8F00873DEC /* SignUpViewModel.swift */; };
 		F22B4E1324F684E000873DEC /* DefaultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B4E1224F684E000873DEC /* DefaultResponse.swift */; };
 		F26A2B88251225DA00B0228E /* BookListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A2B87251225DA00B0228E /* BookListViewModel.swift */; };
-		F26A78E424CA8ABE00EE4378 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A78E324CA8ABE00EE4378 /* NetworkClient.swift */; };
 		F26A78E624CAB9C400EE4378 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A78E524CAB9C400EE4378 /* LoginViewController.swift */; };
 		F26A78EA24CABAA100EE4378 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A78E924CABAA100EE4378 /* LoginViewModel.swift */; };
 		F26A78ED24CBA96500EE4378 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A78EC24CBA96500EE4378 /* ViewModelType.swift */; };
 		F26A78EF24CBACE600EE4378 /* ResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A78EE24CBACE600EE4378 /* ResponseProtocol.swift */; };
-		F26A78F224CBADAB00EE4378 /* PostLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A78F124CBADAB00EE4378 /* PostLogin.swift */; };
-		F26A78F824CD298600EE4378 /* PostLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A78F724CD298600EE4378 /* PostLoginRequest.swift */; };
 		F2762A3324ED3E5F00CB6434 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2762A3224ED3E5F00CB6434 /* TokenManager.swift */; };
 		F2762A3524ED41B200CB6434 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2762A3424ED41B200CB6434 /* User.swift */; };
 		F2762A3724ED43BB00CB6434 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2762A3624ED43BB00CB6434 /* DatabaseManager.swift */; };
 		F2762A3A24ED44B100CB6434 /* UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2762A3924ED44B100CB6434 /* UIActivityIndicatorView.swift */; };
 		F2762A3C24ED454B00CB6434 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2762A3B24ED454B00CB6434 /* UIViewController.swift */; };
 		F2872FC5248A6B4A0001F77C /* BookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2872FC4248A6B4A0001F77C /* BookListTableViewCell.swift */; };
-		F2A167FD248A2CF5007502D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A167FC248A2CF5007502D9 /* AppDelegate.swift */; };
 		F2A16804248A2CF5007502D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A16802248A2CF5007502D9 /* Main.storyboard */; };
 		F2A16806248A2CF8007502D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A16805248A2CF8007502D9 /* Assets.xcassets */; };
 		F2A16809248A2CF8007502D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A16807248A2CF8007502D9 /* LaunchScreen.storyboard */; };
 		F2B3E6ED24A9781B00AE23F1 /* JalnanOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2B3E6EC24A9781B00AE23F1 /* JalnanOTF.otf */; };
-		F2CF199224FF8FE90086CBB2 /* AlamofireLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CF199124FF8FE90086CBB2 /* AlamofireLogger.swift */; };
 		F2CF199724FFB7C80086CBB2 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CF199624FFB7C80086CBB2 /* BookListViewController.swift */; };
+		F2E3E81B2540489900A716C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E3E81A2540489900A716C6 /* AppDelegate.swift */; };
 		F2F15FD724BBDE92001FA06B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F15FD624BBDE92001FA06B /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -42,13 +38,10 @@
 		F22B4E0D24F67F8F00873DEC /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		F22B4E1224F684E000873DEC /* DefaultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultResponse.swift; sourceTree = "<group>"; };
 		F26A2B87251225DA00B0228E /* BookListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewModel.swift; sourceTree = "<group>"; };
-		F26A78E324CA8ABE00EE4378 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		F26A78E524CAB9C400EE4378 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F26A78E924CABAA100EE4378 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F26A78EC24CBA96500EE4378 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		F26A78EE24CBACE600EE4378 /* ResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseProtocol.swift; sourceTree = "<group>"; };
-		F26A78F124CBADAB00EE4378 /* PostLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLogin.swift; sourceTree = "<group>"; };
-		F26A78F724CD298600EE4378 /* PostLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLoginRequest.swift; sourceTree = "<group>"; };
 		F2762A3224ED3E5F00CB6434 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		F2762A3424ED41B200CB6434 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F2762A3624ED43BB00CB6434 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
@@ -56,14 +49,13 @@
 		F2762A3B24ED454B00CB6434 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		F2872FC4248A6B4A0001F77C /* BookListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewCell.swift; sourceTree = "<group>"; };
 		F2A167F9248A2CF5007502D9 /* D-Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D-Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2A167FC248A2CF5007502D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2A16803248A2CF5007502D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2A16805248A2CF8007502D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2A16808248A2CF8007502D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2A1680A248A2CF8007502D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2B3E6EC24A9781B00AE23F1 /* JalnanOTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = JalnanOTF.otf; sourceTree = "<group>"; };
-		F2CF199124FF8FE90086CBB2 /* AlamofireLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireLogger.swift; sourceTree = "<group>"; };
 		F2CF199624FFB7C80086CBB2 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
+		F2E3E81A2540489900A716C6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2F15FD624BBDE92001FA06B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F779AC549219EDFA0FDB4573 /* Pods_D_Book.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_D_Book.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,51 +98,19 @@
 			path = SignUp;
 			sourceTree = "<group>";
 		};
-		F26A78EB24CBA94500EE4378 /* Protocols */ = {
+		F2762A2F24ED324700CB6434 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F26A78EC24CBA96500EE4378 /* ViewModelType.swift */,
-				F26A78EE24CBACE600EE4378 /* ResponseProtocol.swift */,
+				F2E3E82425404A7100A716C6 /* Login */,
+				F2E3E82725404B5000A716C6 /* SignUp */,
+				F2E3E82825404C2E00A716C6 /* BookList */,
+				F2E3E82925404C3700A716C6 /* BookDetail */,
+				F2E3E82A25404C4800A716C6 /* MyLibrary */,
+				F2E3E82B25404C5B00A716C6 /* BookViewer */,
+				F2E3E82C25404C7600A716C6 /* Settings */,
+				F2E3E82325404A6300A716C6 /* OldFile */,
 			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		F26A78F424CC576900EE4378 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				F26A78F624CC59FC00EE4378 /* Response */,
-				F26A78F524CC59F300EE4378 /* Request */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		F26A78F524CC59F300EE4378 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				F26A78F724CD298600EE4378 /* PostLoginRequest.swift */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		F26A78F624CC59FC00EE4378 /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				F26A78F124CBADAB00EE4378 /* PostLogin.swift */,
-			);
-			path = Response;
-			sourceTree = "<group>";
-		};
-		F2762A2F24ED324700CB6434 /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				F2872FC4248A6B4A0001F77C /* BookListTableViewCell.swift */,
-				F2F15FD624BBDE92001FA06B /* Login.storyboard */,
-				F2A16802248A2CF5007502D9 /* Main.storyboard */,
-				F2CF199524FFB7610086CBB2 /* BookList */,
-				F2762A3024ED326400CB6434 /* Login */,
-				F22B4E0824F6693C00873DEC /* SignUp */,
-			);
-			path = Scenes;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		F2762A3024ED326400CB6434 /* Login */ = {
@@ -201,31 +161,25 @@
 		F2A167FB248A2CF5007502D9 /* D-Book */ = {
 			isa = PBXGroup;
 			children = (
-				F2B3E6DF24A974CC00AE23F1 /* Application */,
+				F2E3E81A2540489900A716C6 /* AppDelegate.swift */,
+				F2E3E8192540488B00A716C6 /* Flows */,
+				F2E3E81D254048F700A716C6 /* Common */,
+				F2E3E81E254048FB00A716C6 /* Configs */,
 				F2762A3824ED446C00CB6434 /* Extension */,
-				F26A78EB24CBA94500EE4378 /* Protocols */,
 				F2762A3124ED3E4500CB6434 /* Managers */,
-				F2D05D3424AADC0400E229CD /* Model */,
-				F2762A2F24ED324700CB6434 /* Scenes */,
-				F2D05D3A24AADD9000E229CD /* Network */,
-				F2D05D3B24AADFCB00E229CD /* Resources */,
-				F2A16807248A2CF8007502D9 /* LaunchScreen.storyboard */,
-				F2A1680A248A2CF8007502D9 /* Info.plist */,
+				F2D05D3424AADC0400E229CD /* Models */,
+				F2762A2F24ED324700CB6434 /* Modules */,
+				F2D05D3A24AADD9000E229CD /* Networking */,
+				F2E3E81F2540490400A716C6 /* Thrid Party */,
+				F2E3E82525404ABD00A716C6 /* Resources */,
 			);
 			path = "D-Book";
-			sourceTree = "<group>";
-		};
-		F2B3E6DF24A974CC00AE23F1 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				F2A167FC248A2CF5007502D9 /* AppDelegate.swift */,
-			);
-			path = Application;
 			sourceTree = "<group>";
 		};
 		F2B3E6EB24A977A900AE23F1 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				F2A1680A248A2CF8007502D9 /* Info.plist */,
 				F2B3E6EC24A9781B00AE23F1 /* JalnanOTF.otf */,
 			);
 			path = Font;
@@ -240,32 +194,122 @@
 			path = BookList;
 			sourceTree = "<group>";
 		};
-		F2D05D3424AADC0400E229CD /* Model */ = {
+		F2D05D3424AADC0400E229CD /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				F2762A3424ED41B200CB6434 /* User.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		F2D05D3A24AADD9000E229CD /* Network */ = {
+		F2D05D3A24AADD9000E229CD /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				F2CF199124FF8FE90086CBB2 /* AlamofireLogger.swift */,
-				F26A78E324CA8ABE00EE4378 /* NetworkClient.swift */,
-				F26A78F424CC576900EE4378 /* Login */,
 				F22B4E1224F684E000873DEC /* DefaultResponse.swift */,
 			);
-			path = Network;
+			path = Networking;
 			sourceTree = "<group>";
 		};
-		F2D05D3B24AADFCB00E229CD /* Resources */ = {
+		F2E3E8192540488B00A716C6 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				F2A16805248A2CF8007502D9 /* Assets.xcassets */,
-				F2B3E6EB24A977A900AE23F1 /* Font */,
 			);
-			path = Resources;
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		F2E3E81D254048F700A716C6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F26A78EC24CBA96500EE4378 /* ViewModelType.swift */,
+				F26A78EE24CBACE600EE4378 /* ResponseProtocol.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F2E3E81E254048FB00A716C6 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		F2E3E81F2540490400A716C6 /* Thrid Party */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Thrid Party";
+			sourceTree = "<group>";
+		};
+		F2E3E82325404A6300A716C6 /* OldFile */ = {
+			isa = PBXGroup;
+			children = (
+				F2872FC4248A6B4A0001F77C /* BookListTableViewCell.swift */,
+				F2F15FD624BBDE92001FA06B /* Login.storyboard */,
+				F2A16802248A2CF5007502D9 /* Main.storyboard */,
+				F2CF199524FFB7610086CBB2 /* BookList */,
+				F2762A3024ED326400CB6434 /* Login */,
+				F22B4E0824F6693C00873DEC /* SignUp */,
+			);
+			path = OldFile;
+			sourceTree = "<group>";
+		};
+		F2E3E82425404A7100A716C6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F2E3E82525404ABD00A716C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2B3E6EB24A977A900AE23F1 /* Font */,
+				F2A16807248A2CF8007502D9 /* LaunchScreen.storyboard */,
+				F2A16805248A2CF8007502D9 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F2E3E82725404B5000A716C6 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		F2E3E82825404C2E00A716C6 /* BookList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BookList;
+			sourceTree = "<group>";
+		};
+		F2E3E82925404C3700A716C6 /* BookDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BookDetail;
+			sourceTree = "<group>";
+		};
+		F2E3E82A25404C4800A716C6 /* MyLibrary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyLibrary;
+			sourceTree = "<group>";
+		};
+		F2E3E82B25404C5B00A716C6 /* BookViewer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BookViewer;
+			sourceTree = "<group>";
+		};
+		F2E3E82C25404C7600A716C6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,23 +429,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2CF199224FF8FE90086CBB2 /* AlamofireLogger.swift in Sources */,
 				F2762A3C24ED454B00CB6434 /* UIViewController.swift in Sources */,
 				F22B4E0E24F67F8F00873DEC /* SignUpViewModel.swift in Sources */,
 				F2CF199724FFB7C80086CBB2 /* BookListViewController.swift in Sources */,
-				F26A78E424CA8ABE00EE4378 /* NetworkClient.swift in Sources */,
 				F2872FC5248A6B4A0001F77C /* BookListTableViewCell.swift in Sources */,
 				F22B4E1324F684E000873DEC /* DefaultResponse.swift in Sources */,
 				F26A78EF24CBACE600EE4378 /* ResponseProtocol.swift in Sources */,
-				F26A78F824CD298600EE4378 /* PostLoginRequest.swift in Sources */,
+				F2E3E81B2540489900A716C6 /* AppDelegate.swift in Sources */,
 				F26A2B88251225DA00B0228E /* BookListViewModel.swift in Sources */,
 				F26A78EA24CABAA100EE4378 /* LoginViewModel.swift in Sources */,
 				F2762A3A24ED44B100CB6434 /* UIActivityIndicatorView.swift in Sources */,
-				F2A167FD248A2CF5007502D9 /* AppDelegate.swift in Sources */,
 				F26A78E624CAB9C400EE4378 /* LoginViewController.swift in Sources */,
 				F22B4E0A24F6698B00873DEC /* SignUpViewController.swift in Sources */,
 				F2762A3724ED43BB00CB6434 /* DatabaseManager.swift in Sources */,
-				F26A78F224CBADAB00EE4378 /* PostLogin.swift in Sources */,
 				F26A78ED24CBA96500EE4378 /* ViewModelType.swift in Sources */,
 				F2762A3324ED3E5F00CB6434 /* TokenManager.swift in Sources */,
 				F2762A3524ED41B200CB6434 /* User.swift in Sources */,
