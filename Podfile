@@ -6,15 +6,37 @@ target 'D-Book' do
   use_frameworks!
 
   # Pods for D-Book
+  
+  # Rx
   pod 'RxSwift'
   pod 'RxCocoa'
   
+  # Rx Extensions
+  pod 'RxFlow'
+  pod 'RxGesture'
+  pod 'RxDataSources'
+
+  # Networking
   pod 'Alamofire'
-  pod 'RxAlamofire'
+  pod 'Moya/RxSwift'
   
-  pod 'RealmSwift'
-  pod 'KeychainAccess'
+  # Tools
+  pod 'R.swift'
+  pod 'Reusable'
   
+  # Image
   pod 'Kingfisher'
+  
+  # DataBase
+  pod 'RealmSwift'
+  
+  # Security
+  pod 'KeychainAccess'
+  pod 'CryptoSwift'
+
+  # UI
+  pod 'NVActivityIndicatorView/Extended'
+  pod 'SwiftMessages'
+  pod 'ImageSlideshow/Kingfisher'
 
 end
