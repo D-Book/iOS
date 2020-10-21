@@ -28,6 +28,12 @@
 		F2B3E6ED24A9781B00AE23F1 /* JalnanOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2B3E6EC24A9781B00AE23F1 /* JalnanOTF.otf */; };
 		F2CF199724FFB7C80086CBB2 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CF199624FFB7C80086CBB2 /* BookListViewController.swift */; };
 		F2E3E81B2540489900A716C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E3E81A2540489900A716C6 /* AppDelegate.swift */; };
+		F2E3E84A25404F6200A716C6 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E3E84925404F6200A716C6 /* ErrorResponse.swift */; };
+		F2E3E84F25404F8400A716C6 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E3E84E25404F8400A716C6 /* BaseService.swift */; };
+		F2E3E85225404FA000A716C6 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E3E85125404FA000A716C6 /* BaseAPI.swift */; };
+		F2E3E85525404FD800A716C6 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E3E85425404FD800A716C6 /* MainService.swift */; };
+		F2E3E85825404FDF00A716C6 /* MainAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E3E85725404FDF00A716C6 /* MainAPI.swift */; };
+		F2E3E85B2540512900A716C6 /* RequestLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E3E85A2540512900A716C6 /* RequestLoggingPlugin.swift */; };
 		F2F15FD724BBDE92001FA06B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F15FD624BBDE92001FA06B /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +62,12 @@
 		F2B3E6EC24A9781B00AE23F1 /* JalnanOTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = JalnanOTF.otf; sourceTree = "<group>"; };
 		F2CF199624FFB7C80086CBB2 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
 		F2E3E81A2540489900A716C6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2E3E84925404F6200A716C6 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		F2E3E84E25404F8400A716C6 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		F2E3E85125404FA000A716C6 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		F2E3E85425404FD800A716C6 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
+		F2E3E85725404FDF00A716C6 /* MainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAPI.swift; sourceTree = "<group>"; };
+		F2E3E85A2540512900A716C6 /* RequestLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLoggingPlugin.swift; sourceTree = "<group>"; };
 		F2F15FD624BBDE92001FA06B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F779AC549219EDFA0FDB4573 /* Pods_D_Book.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_D_Book.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -206,6 +218,9 @@
 			isa = PBXGroup;
 			children = (
 				F22B4E1224F684E000873DEC /* DefaultResponse.swift */,
+				F2E3E84925404F6200A716C6 /* ErrorResponse.swift */,
+				F2E3E84525404ECC00A716C6 /* RestAPI */,
+				F2E3E84825404F3400A716C6 /* CustomPlugin */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -310,6 +325,41 @@
 			children = (
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		F2E3E84525404ECC00A716C6 /* RestAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F2E3E84625404EDA00A716C6 /* BaseService */,
+				F2E3E84725404EF900A716C6 /* MainService */,
+			);
+			path = RestAPI;
+			sourceTree = "<group>";
+		};
+		F2E3E84625404EDA00A716C6 /* BaseService */ = {
+			isa = PBXGroup;
+			children = (
+				F2E3E84E25404F8400A716C6 /* BaseService.swift */,
+				F2E3E85125404FA000A716C6 /* BaseAPI.swift */,
+			);
+			path = BaseService;
+			sourceTree = "<group>";
+		};
+		F2E3E84725404EF900A716C6 /* MainService */ = {
+			isa = PBXGroup;
+			children = (
+				F2E3E85425404FD800A716C6 /* MainService.swift */,
+				F2E3E85725404FDF00A716C6 /* MainAPI.swift */,
+			);
+			path = MainService;
+			sourceTree = "<group>";
+		};
+		F2E3E84825404F3400A716C6 /* CustomPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				F2E3E85A2540512900A716C6 /* RequestLoggingPlugin.swift */,
+			);
+			path = CustomPlugin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,13 +479,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2E3E85B2540512900A716C6 /* RequestLoggingPlugin.swift in Sources */,
 				F2762A3C24ED454B00CB6434 /* UIViewController.swift in Sources */,
 				F22B4E0E24F67F8F00873DEC /* SignUpViewModel.swift in Sources */,
+				F2E3E85225404FA000A716C6 /* BaseAPI.swift in Sources */,
 				F2CF199724FFB7C80086CBB2 /* BookListViewController.swift in Sources */,
 				F2872FC5248A6B4A0001F77C /* BookListTableViewCell.swift in Sources */,
 				F22B4E1324F684E000873DEC /* DefaultResponse.swift in Sources */,
+				F2E3E85525404FD800A716C6 /* MainService.swift in Sources */,
 				F26A78EF24CBACE600EE4378 /* ResponseProtocol.swift in Sources */,
+				F2E3E85825404FDF00A716C6 /* MainAPI.swift in Sources */,
 				F2E3E81B2540489900A716C6 /* AppDelegate.swift in Sources */,
+				F2E3E84A25404F6200A716C6 /* ErrorResponse.swift in Sources */,
+				F2E3E84F25404F8400A716C6 /* BaseService.swift in Sources */,
 				F26A2B88251225DA00B0228E /* BookListViewModel.swift in Sources */,
 				F26A78EA24CABAA100EE4378 /* LoginViewModel.swift in Sources */,
 				F2762A3A24ED44B100CB6434 /* UIActivityIndicatorView.swift in Sources */,
