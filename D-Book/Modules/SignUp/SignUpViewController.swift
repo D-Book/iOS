@@ -19,10 +19,10 @@ class SignUpViewController: BaseViewController, StoryboardSceneBased {
     @IBOutlet weak var passwordField: UITextField!
     
     @IBOutlet weak var emailValidImage: UIImageView!
+    @IBOutlet weak var passwordValidImage: UIImageView!
     
-    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
-    
     
     
     override func viewDidLoad() {
@@ -33,5 +33,42 @@ class SignUpViewController: BaseViewController, StoryboardSceneBased {
     override func bindViewModel() {
         super.bindViewModel()
         
+        guard let viewModel = viewModel as? SignUpViewModel else { fatalError("ViewModel: \(self.viewModel!) Casting Error") }
+        
+        let emailControlEvents: Observable<Bool> = Observable.merge([
+            emailField.rx.controlEvent(.editingDidBegin).map { true },
+            emailField.rx.controlEvent(.editingDidEnd).map { false }
+        ])
+
+        let passwordControlEvents: Observable<Bool> = Observable.merge([
+            passwordField.rx.controlEvent(.editingDidBegin).map { true },
+            passwordField.rx.controlEvent(.editingDidEnd).map { false }
+        ])
+        
+        let input = SignUpViewModel.Input(nextButtonSelection: nextButton.rx.tap.asDriver(),
+                                          signInButtonSelection: signInButton.rx.tap.asDriver(),
+                                          emailEvents: emailControlEvents,
+                                          passwordEvents: passwordControlEvents)
+        let output = viewModel.transform(input: input)
+        
+        emailField.rx.text.orEmpty
+            .bind(to: viewModel.email)
+            .disposed(by: rx.disposeBag)
+
+        passwordField.rx.text.orEmpty
+            .bind(to: viewModel.password)
+            .disposed(by: rx.disposeBag)
+
+        output.nextButtonEnabled
+            .drive(nextButton.rx.isEnabled)
+            .disposed(by: rx.disposeBag)
+
+        output.emailValidation
+            .drive(self.emailValidImage.rx.image)
+            .disposed(by: rx.disposeBag)
+
+        output.passwordValidation
+            .drive(self.passwordValidImage.rx.image)
+            .disposed(by: rx.disposeBag)
     }
 }

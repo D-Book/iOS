@@ -17,7 +17,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="Tgr-EO-Ftz">
             <objects>
-                <viewController id="YvE-h7-2zB" customClass="SignUpViewController" customModule="D_Book" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="YvE-h7-2zB" customClass="SignUpViewController" customModule="D_Book" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C0S-Hh-TpY">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,7 +106,7 @@
                                                     </view>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6자리 이상, 대문자 포함, 숫자 포함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFs-bR-71x">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최소 8자 이상, 대소문자, 숫자 조합" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFs-bR-71x">
                                                 <rect key="frame" x="40" y="202" width="310" height="11"/>
                                                 <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="11"/>
                                                 <color key="textColor" red="0.62367820740000002" green="0.62313765290000001" blue="0.64314037560000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -174,13 +174,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="O8v-Zs-Ira"/>
                     <connections>
-                        <outlet property="completeButton" destination="XRG-94-Mqi" id="7zz-cg-OIe"/>
-                        <outlet property="dismissToLogin" destination="p0Y-s9-yDl" id="GQJ-yA-QbD"/>
                         <outlet property="emailField" destination="gMl-m4-xmV" id="Xwh-rO-KL2"/>
                         <outlet property="emailValidImage" destination="zG3-Am-bcI" id="Ktj-MQ-QoI"/>
+                        <outlet property="nextButton" destination="XRG-94-Mqi" id="14B-5N-OZh"/>
                         <outlet property="passwordField" destination="mvd-bb-lue" id="bTV-Qy-rhk"/>
+                        <outlet property="passwordValidImage" destination="SEw-1W-ETn" id="csS-vW-l9b"/>
                         <outlet property="signInButton" destination="p0Y-s9-yDl" id="quL-Wy-93k"/>
-                        <outlet property="signUpButton" destination="XRG-94-Mqi" id="14B-5N-OZh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="339-Jz-sog" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
