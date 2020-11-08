@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+# platform :ios, '13.0'
 
 target 'D-Book' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -15,9 +15,9 @@ target 'D-Book' do
   pod 'RxFlow'
   pod 'RxGesture'
   pod 'RxDataSources'
+  pod 'NSObject+Rx'
 
   # Networking
-  pod 'Alamofire'
   pod 'Moya/RxSwift'
   
   # Tools
@@ -38,5 +38,9 @@ target 'D-Book' do
   pod 'NVActivityIndicatorView/Extended'
   pod 'SwiftMessages'
   pod 'ImageSlideshow/Kingfisher'
+  pod 'KafkaRefresh'
+  
+  # Code Quality
+  pod 'FLEX'
 
 end
