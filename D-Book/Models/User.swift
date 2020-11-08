@@ -9,20 +9,18 @@
 import Foundation
 import RealmSwift
 
-class User: Object {
+class User: Object, Codable {
+    @objc dynamic var id: String = ""
     @objc dynamic var username: String = ""
     @objc dynamic var email: String = ""
+    @objc dynamic var password: String = ""
     @objc dynamic var profileImage: String = ""
-    @objc dynamic var libraryImage: String = ""
-    @objc dynamic var libraryName: String = ""
     
-    required convenience init(username: String, email: String, profileImage: String, libraryImage: String, libraryName: String) {
-        self.init()
-        
-        self.username = username
-        self.email = email
-        self.profileImage = profileImage
-        self.libraryName = libraryImage
-        self.libraryName = libraryName
+    enum CodingKeys: String, CodingKey {
+        case id
+        case username
+        case email
+        case password
+        case profileImage = "profile_image"
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct DefaultResponse: ResponseProtocol {
+struct DefaultResponse {
     var status: Int
     var message: String
     
