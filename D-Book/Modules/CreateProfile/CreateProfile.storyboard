@@ -5,20 +5,77 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="JalnanOTF.otf">
+            <string>JalnanOTF</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Create Profile View Controller-->
         <scene sceneID="Y64-d1-fAo">
             <objects>
-                <viewController id="CP3-NJ-uZo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateProfileViewController" id="CP3-NJ-uZo" customClass="CreateProfileViewController" customModule="D_Book" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bd2-JR-7hY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="102" translatesAutoresizingMaskIntoConstraints="NO" id="hnD-p4-ksf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="rCT-Po-ulg">
+                                        <rect key="frame" x="40" y="0.0" width="334" height="317"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="Pi9-qj-GL3">
+                                                <rect key="frame" x="112" y="150" width="110" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="110" id="91v-Bd-frq"/>
+                                                    <constraint firstAttribute="width" constant="110" id="YuY-5M-MWS"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HDR-n6-nqg">
+                                                <rect key="frame" x="112" y="283" width="110" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="t57-Vn-Ph9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="150" left="0.0" bottom="0.0" right="0.0"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiV-L5-fsV">
+                                        <rect key="frame" x="40" y="419" width="334" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bf2-Kb-61j"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="JalnanOTF" family="Jalnan OTF" pointSize="18"/>
+                                        <state key="normal" title="D-Book 시작하기" backgroundImage="RoundBT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="e3n-co-qBx">
+                                        <rect key="frame" x="40" y="571" width="334" height="247"/>
+                                    </view>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="0.0" left="40" bottom="0.0" right="40"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="icm-iW-Zca"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hnD-p4-ksf" firstAttribute="top" secondItem="icm-iW-Zca" secondAttribute="top" id="154-Tn-ju0"/>
+                            <constraint firstItem="hnD-p4-ksf" firstAttribute="leading" secondItem="icm-iW-Zca" secondAttribute="leading" id="Ilz-D5-BeK"/>
+                            <constraint firstItem="icm-iW-Zca" firstAttribute="bottom" secondItem="hnD-p4-ksf" secondAttribute="bottom" id="SR8-9x-Gq2"/>
+                            <constraint firstItem="icm-iW-Zca" firstAttribute="trailing" secondItem="hnD-p4-ksf" secondAttribute="trailing" id="t8g-5E-BLd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="completeButton" destination="aiV-L5-fsV" id="xeq-5Y-2WK"/>
+                        <outlet property="nameTextField" destination="HDR-n6-nqg" id="V93-8A-lKK"/>
+                        <outlet property="profileImageView" destination="Pi9-qj-GL3" id="pxB-hw-P4F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIl-B6-9ke" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -26,8 +83,7 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="RoundBT" width="295" height="50"/>
+        <image name="profileImage" width="110" height="110"/>
     </resources>
 </document>
