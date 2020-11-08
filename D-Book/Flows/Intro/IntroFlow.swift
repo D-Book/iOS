@@ -46,8 +46,8 @@ class IntroFlow: Flow {
             return navigateToSignIn()
         case .signUpIsRequired:
             return navigateToSignUp()
-        case .createProfileIsRequired:
-            return navigateToCreateProfile()
+        case .createProfileIsRequired(let email, let password):
+            return navigateToCreateProfile(email: email, password: password)
         case .dismissSignUpIsRequired:
             return dismissSignUp()
         }
@@ -70,10 +70,11 @@ extension IntroFlow {
 // MARK: - Navigate to SignUp
 extension IntroFlow {
     private func navigateToSignUp() -> FlowContributors {
-        let viewModel = signUpViewModel()
+        let viewModel = SignUpViewModel()
         let viewController = SignUpViewController.instantiate(withViewModel: viewModel,
                                                               andServices: self.service)
 
+        viewController.modalPresentationStyle = .fullScreen
         self.rootViewController.present(viewController, animated: true)
         return .one(flowContributor: .contribute(withNextPresentable: viewController,
                                                  withNextStepper: viewModel))
@@ -82,12 +83,15 @@ extension IntroFlow {
 
 // MARK: - Navigate to CreateProfile
 extension IntroFlow {
-    private func navigateToCreateProfile() -> FlowContributors {
-        let viewModel = SignInViewModel()
+    private func navigateToCreateProfile(email: String, password: String) -> FlowContributors {
+        let viewModel = CreateProfileViewModel(email: email, password: password)
         let viewController = CreateProfileViewController.instantiate(withViewModel: viewModel,
                                                                      andServices: self.service)
 
-        self.rootViewController.pushViewController(viewController, animated: true)
+        if let signUpViewController = self.rootViewController.presentedViewController {
+            signUpViewController.present(viewController, animated: true)
+        }
+        
         return .one(flowContributor: .contribute(withNextPresentable: viewController,
                                                  withNextStepper: viewModel))
     }

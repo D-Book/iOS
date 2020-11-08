@@ -11,6 +11,6 @@ import RxFlow
 enum IntroStep: Step {
     case signInIsRequired // initial
     case signUpIsRequired
-    case createProfileIsRequired
+    case createProfileIsRequired(email: String, password: String)
     case dismissSignUpIsRequired
 }
