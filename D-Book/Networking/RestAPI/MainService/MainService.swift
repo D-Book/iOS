@@ -13,12 +13,16 @@ import CryptoSwift
 
 final class MainService: BaseService<MainAPI> {
     
-    func login(email: String, password: String) {
-        
+    func signIn(email: String, password: String) -> Single<SignInResponse> {
+        requestObject(.signIn(email: email, password: password.sha256()), type: SignInResponse.self)
     }
     
-    func signUp(username: String, email: String, password: String, profileImage: UIImage?) {
-
+    func signUp(username: String, email: String, password: String, profileImage: UIImage?) -> Single<SignInResponse> {
+        requestObject(.signUp(username: username,
+                              email: email,
+                              password: password.sha256(),
+                              profileImage: profileImage),
+                      type: SignInResponse.self)
     }
     
     func bookList() {

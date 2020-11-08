@@ -13,7 +13,7 @@ import Moya
 enum MainAPI {
     
     // MARK: - Authentication is not required
-    case login(email: String, password: String)
+    case signIn(email: String, password: String)
     case signUp(username: String, email: String, password: String, profileImage: UIImage?)
     
     case bookList
@@ -32,7 +32,7 @@ enum MainAPI {
 extension MainAPI: BaseAPI {
     var path: String {
         switch self {
-        case .login:
+        case .signIn:
             return "/user/login"
         case .signUp:
             return "/user/sign-up"
@@ -54,7 +54,7 @@ extension MainAPI: BaseAPI {
     
     var method: Moya.Method {
         switch self {
-        case .login, .signUp, .bookUpload, .addMyLibrary:
+        case .signIn, .signUp, .bookUpload, .addMyLibrary:
             return .post
         case .bookEdit:
             return .put
@@ -68,12 +68,13 @@ extension MainAPI: BaseAPI {
     var headers: [String: String]? {
         switch self {
         // None Authentication
-        case .login, .signUp, .bookList:
+        case .signIn, .signUp, .bookList:
             break
         // Authentication
         default:
-            return ["Authorization": "\(AuthManager.getAccessToken())"]
+            return ["Authentication": TokenManager.shared.token!]
         }
+        return nil
     }
     
     var task: Task {
@@ -123,7 +124,7 @@ extension MainAPI: BaseAPI {
     var parameters: [String: Any]? {
         var params: [String: Any] = [:]
         switch self {
-        case .login(let email, let password):
+        case .signIn(let email, let password):
             params["email"] = email
             params["password"] = password
         case .addMyLibrary(let bookId):
