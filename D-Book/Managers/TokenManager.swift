@@ -11,6 +11,8 @@ import RxSwift
 import RxCocoa
 import KeychainAccess
 
+let loggedIn = BehaviorRelay<Bool>(value: false)
+
 class TokenManager {
     
     static let shared = TokenManager()
@@ -18,7 +20,7 @@ class TokenManager {
     private init() {}
     
     fileprivate let tokenKey = "TokenKey"
-    fileprivate let keychain = Keychain(service: "com.tistory.axe-num1.D-Book")
+    fileprivate let keychain = Keychain(service: Configs.App.bundleIdentifier)
     
     var token: String? {
         get {
