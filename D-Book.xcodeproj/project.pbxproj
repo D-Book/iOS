@@ -10,13 +10,13 @@
 		7A3C980F4E1DD7E22D056CFF /* Pods_D_Book.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F779AC549219EDFA0FDB4573 /* Pods_D_Book.framework */; };
 		F22B4E1324F684E000873DEC /* DefaultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B4E1224F684E000873DEC /* DefaultResponse.swift */; };
 		F22D0FB52556C2FF00494FA8 /* SignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D0FB42556C2FF00494FA8 /* SignInResponse.swift */; };
+		F22D0FBC2557E99100494FA8 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D0FBB2557E99100494FA8 /* UIImagePickerController+Rx.swift */; };
+		F22D0FBF2557EA3300494FA8 /* UIIVew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22D0FBE2557EA3300494FA8 /* UIIVew.swift */; };
 		F239D9892556A83400E54441 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F239D9882556A83400E54441 /* SignIn.storyboard */; };
 		F26A78ED24CBA96500EE4378 /* ViewModelBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A78EC24CBA96500EE4378 /* ViewModelBased.swift */; };
 		F2762A3324ED3E5F00CB6434 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2762A3224ED3E5F00CB6434 /* TokenManager.swift */; };
 		F2762A3524ED41B200CB6434 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2762A3424ED41B200CB6434 /* User.swift */; };
 		F2762A3724ED43BB00CB6434 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2762A3624ED43BB00CB6434 /* DatabaseManager.swift */; };
-		F2762A3A24ED44B100CB6434 /* UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2762A3924ED44B100CB6434 /* UIActivityIndicatorView.swift */; };
-		F2762A3C24ED454B00CB6434 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2762A3B24ED454B00CB6434 /* UIViewController.swift */; };
 		F2A16806248A2CF8007502D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A16805248A2CF8007502D9 /* Assets.xcassets */; };
 		F2A16809248A2CF8007502D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A16807248A2CF8007502D9 /* LaunchScreen.storyboard */; };
 		F2B3E6ED24A9781B00AE23F1 /* JalnanOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2B3E6EC24A9781B00AE23F1 /* JalnanOTF.otf */; };
@@ -69,13 +69,13 @@
 		7CC34EA1358F899A7A054E71 /* Pods-D-Book.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-D-Book.release.xcconfig"; path = "Target Support Files/Pods-D-Book/Pods-D-Book.release.xcconfig"; sourceTree = "<group>"; };
 		F22B4E1224F684E000873DEC /* DefaultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultResponse.swift; sourceTree = "<group>"; };
 		F22D0FB42556C2FF00494FA8 /* SignInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponse.swift; sourceTree = "<group>"; };
+		F22D0FBB2557E99100494FA8 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
+		F22D0FBE2557EA3300494FA8 /* UIIVew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIIVew.swift; sourceTree = "<group>"; };
 		F239D9882556A83400E54441 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		F26A78EC24CBA96500EE4378 /* ViewModelBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBased.swift; sourceTree = "<group>"; };
 		F2762A3224ED3E5F00CB6434 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		F2762A3424ED41B200CB6434 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F2762A3624ED43BB00CB6434 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
-		F2762A3924ED44B100CB6434 /* UIActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorView.swift; sourceTree = "<group>"; };
-		F2762A3B24ED454B00CB6434 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		F2A167F9248A2CF5007502D9 /* D-Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D-Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A16805248A2CF8007502D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2A16808248A2CF8007502D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -190,8 +190,8 @@
 		F2762A3824ED446C00CB6434 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F2762A3924ED44B100CB6434 /* UIActivityIndicatorView.swift */,
-				F2762A3B24ED454B00CB6434 /* UIViewController.swift */,
+				F22D0FBB2557E99100494FA8 /* UIImagePickerController+Rx.swift */,
+				F22D0FBE2557EA3300494FA8 /* UIIVew.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -622,7 +622,6 @@
 				F2D979AF25563F140033AEFD /* IntroStep.swift in Sources */,
 				F22D0FB52556C2FF00494FA8 /* SignInResponse.swift in Sources */,
 				F2D97A3F255670F10033AEFD /* SignUpViewController.swift in Sources */,
-				F2762A3C24ED454B00CB6434 /* UIViewController.swift in Sources */,
 				F2D97A64255672800033AEFD /* MyLibraryViewModel.swift in Sources */,
 				F2E3E85225404FA000A716C6 /* BaseAPI.swift in Sources */,
 				F2D97A42255671680033AEFD /* SignInViewModel.swift in Sources */,
@@ -630,12 +629,14 @@
 				F22B4E1324F684E000873DEC /* DefaultResponse.swift in Sources */,
 				F2D97A582556724A0033AEFD /* BookDetailViewController.swift in Sources */,
 				F2E3E85525404FD800A716C6 /* MainService.swift in Sources */,
+				F22D0FBF2557EA3300494FA8 /* UIIVew.swift in Sources */,
 				F2D979B82556474D0033AEFD /* BookListFlow.swift in Sources */,
 				F2D97A5B255672550033AEFD /* MyLibraryViewController.swift in Sources */,
 				F2D979A425563DCF0033AEFD /* TabBarFlow.swift in Sources */,
 				F2E3E85825404FDF00A716C6 /* MainAPI.swift in Sources */,
 				F2D97A6D255673E80033AEFD /* BaseViewModel.swift in Sources */,
 				F2E3E81B2540489900A716C6 /* AppDelegate.swift in Sources */,
+				F22D0FBC2557E99100494FA8 /* UIImagePickerController+Rx.swift in Sources */,
 				F2E3E84A25404F6200A716C6 /* ErrorResponse.swift in Sources */,
 				F2D979B3255641040033AEFD /* AppStepper.swift in Sources */,
 				F2D97A69255673C90033AEFD /* BaseViewController.swift in Sources */,
@@ -646,7 +647,6 @@
 				F2D979A825563E160033AEFD /* TabBarStep.swift in Sources */,
 				F2D97A84255693AB0033AEFD /* Configs.swift in Sources */,
 				F2D979C6255663450033AEFD /* MyLibraryStep.swift in Sources */,
-				F2762A3A24ED44B100CB6434 /* UIActivityIndicatorView.swift in Sources */,
 				F2D97A3C255670D80033AEFD /* SignInViewController.swift in Sources */,
 				F2D97A61255672730033AEFD /* BookDetailViewModel.swift in Sources */,
 				F2D979C0255663080033AEFD /* BookListStep.swift in Sources */,

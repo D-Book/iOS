@@ -191,7 +191,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 10 images.
+  /// This `R.image` struct is generated, and contains static references to 11 images.
   struct image {
     /// Image `BarBT_Setting`.
     static let barBT_Setting = Rswift.ImageResource(bundle: R.hostingBundle, name: "BarBT_Setting")
@@ -213,6 +213,8 @@ struct R: Rswift.Validatable {
     static let success = Rswift.ImageResource(bundle: R.hostingBundle, name: "Success")
     /// Image `TextField`.
     static let textField = Rswift.ImageResource(bundle: R.hostingBundle, name: "TextField")
+    /// Image `profileImage`.
+    static let profileImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "profileImage")
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "BarBT_Setting", bundle: ..., traitCollection: ...)`
@@ -281,6 +283,13 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "TextField", bundle: ..., traitCollection: ...)`
     static func textField(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.textField, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "profileImage", bundle: ..., traitCollection: ...)`
+    static func profileImage(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.profileImage, compatibleWith: traitCollection)
     }
     #endif
 
@@ -364,11 +373,19 @@ struct _R: Rswift.Validatable {
     #if os(iOS) || os(tvOS)
     struct createProfile: Rswift.StoryboardResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
+      let createProfileViewController = StoryboardViewControllerResource<CreateProfileViewController>(identifier: "CreateProfileViewController")
       let name = "CreateProfile"
 
+      func createProfileViewController(_: Void = ()) -> CreateProfileViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: createProfileViewController)
+      }
+
       static func validate() throws {
+        if UIKit.UIImage(named: "RoundBT", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'RoundBT' is used in storyboard 'CreateProfile', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "profileImage", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'profileImage' is used in storyboard 'CreateProfile', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
+        if _R.storyboard.createProfile().createProfileViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'createProfileViewController' could not be loaded from storyboard 'CreateProfile' as 'CreateProfileViewController'.") }
       }
 
       fileprivate init() {}
@@ -431,12 +448,18 @@ struct _R: Rswift.Validatable {
     struct signUp: Rswift.StoryboardResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "SignUp"
+      let signUpViewController = StoryboardViewControllerResource<SignUpViewController>(identifier: "SignUpViewController")
+
+      func signUpViewController(_: Void = ()) -> SignUpViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: signUpViewController)
+      }
 
       static func validate() throws {
         if UIKit.UIImage(named: "Logo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Logo' is used in storyboard 'SignUp', but couldn't be loaded.") }
         if UIKit.UIImage(named: "RoundBT", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'RoundBT' is used in storyboard 'SignUp', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
+        if _R.storyboard.signUp().signUpViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'signUpViewController' could not be loaded from storyboard 'SignUp' as 'SignUpViewController'.") }
       }
 
       fileprivate init() {}
